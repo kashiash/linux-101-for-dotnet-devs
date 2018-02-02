@@ -164,12 +164,25 @@ code {
   font-family: $font-fixed;
   color: $code-color !important;
   background: $code-background !important;
-  border-radius: 15px;
   margin: 10px;
   padding: 5px;
+}
+
+pre {
+  border-radius: 15px;
   display: block;
   padding: 0.5em;
 }
+
+// So I can use
+// ```text
+// for no highlighting, but with same
+// indentation etc.
+code.text {
+  display: block;
+  padding: 0.5em;
+}
+
 a,
 a:visited,
 a:hover,

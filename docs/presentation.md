@@ -46,7 +46,7 @@ Oliver Sturm &bull; @olivers &bull; oliver@oliversturm.com
 
 ## On Day 1...
 
-```
+```text
 From: Linus Benedict Torvalds
 Date: August 25 1991
 Subject: What would you like to see most in minix?
@@ -104,7 +104,7 @@ And finally:
 
 This is not from the Linux kernel, but funny anyway :)
 
-```
+```text
 // you can't fix this, but please increment the counter
 // below if you try.
 // hours wasted here: 56
@@ -144,6 +144,17 @@ This is not from the Linux kernel, but funny anyway :)
 ---
 
 ## Getting Started
+
+* Get a _distribution_ and install!
+  * My recommendation: Ubuntu (https://www.ubuntu.com/download/desktop)
+  * Use a VM if you lack spare machines :)
+* Start up a Linux _virtual machine in the Cloud_ and connect via SSH
+  * Details on SSH in a moment
+* Use the _Windows Subsystem for Linux_
+  * Activate Windows 10 / Windows Server optional feature
+  * Run `bash.exe` to install Ubuntu
+  * Alternatively, get other distro installers from the Microsoft Store
+  * `lxrun /uninstall [/full]` gets rid of your bungled installation :)
 
 ---
 
