@@ -180,7 +180,12 @@ pre {
 // indentation etc.
 code.text {
   display: block;
-  padding: 0.5em;
+  padding: 0 !important;
+}
+
+code.linuxprompt {
+  padding-top: 200px !important;
+  font-size: 2em !important;
 }
 
 a,
