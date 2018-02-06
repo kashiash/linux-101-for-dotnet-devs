@@ -39,8 +39,15 @@ Oliver Sturm &bull; @olivers &bull; oliver@oliversturm.com
 
 ## Agenda
 
-* One
-* Two
+* That Linux Thing
+* Getting Started with Linux
+  * Shells, Command Lines and Commands
+  * File Systems and Permissions
+  * Users and Processes
+  * Editing and Configuring
+  * Packages
+* Creating a .NET Core App
+* Setting Up a Runtime Environment
 
 ---
 
@@ -348,6 +355,18 @@ linux:~$ ls -l /bin/ls
 
 ---
 
+## Configuring Things
+
+* `/etc` is the place for system config files
+  * Editing them requires `sudo`
+  * It can also break your system!
+  * Services may need to be restarted or instructed to reload config files, once changes have been made.
+* _dot files_ start with `.` (invisible, remember?) and mostly live in user home directories
+  * Often they override the system-wide configuration of an application
+* Many UI applications use files in `~/.config` these days
+
+---
+
 ## Package Management
 
 * Package Management system depends on your distribution
@@ -439,20 +458,130 @@ sudo apt install code
 
 ---
 
+## Creating a .NET Core MVC App
+
+Simples!
+
+```text
+mkdir olisapp
+cd olisapp
+dotnet new mvc
+dotnet run
+```
+
+---
+
+## Deployment Considerations
+
+* Running the app in Kestrel is easy and fast
+  * The standard template call `CreateDefaultBuilder` uses Kestrel
+* However, Microsoft recommends against running Kestrel as a public front-end server
+* Use a reverse proxy!
+  * Recommendation: nginx
+  * Apache or IIS (or others) also possible
+
+- Plan: Configure Kestrel and nginx for automatic startup of the web app.
+
+---
+
+## Setting Up nginx
+
+```text
+sudo apt install nginx
+cd /etc/nginx
+sudo vi sites-available/demoapp
+sudo ln -s sites-available/demoapp sites-enabled/
+sudo nginx -s reload
+```
+
+demoapp config:
+
+```text
+server {
+  listen 80;
+  location / {
+    proxy_pass http://localhost:5000;
+  }
+}
+```
+
+--
+
+.overlay[.overlay-content[
+
+# Watch Out
+
+In the nginx default setup, there may be a server configuration listening on port 80 already. If so, you can deactivate it by removing the symbolic link:
+
+```text
+sudo rm /etc/nginx/sites-enabled/default
+```
+
+]]
+
+--
+
+.overlay[.overlay-content[
+
+# Note that this Setup is not Complete!
+
+Microsoft has full instructions for nginx (and others) here:
+
+https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?tabs=aspnetcore2x
+
+]]
+
+---
+
+## Auto-Starting Kestrel
+
+```text
+sudo vi /etc/systemd/system/demoapp.service
+sudo systemctl enable demoapp
+sudo systemctl start demoapp
+```
+
+---
+
+## Auto-Starting Kestrel &mdash; demoapp.service
+
+```ini
+[Unit]
+Description=Demo App
+
+[Service]
+WorkingDirectory=PROJECTDIR
+ExecStart=/usr/bin/dotnet PROJECTDIR/.../demoapp.dll
+Restart=always
+RestartSec=10
+SyslogIdentifier=demoapp
+User=www-data
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+
+[Install]
+WantedBy=multi-user.target
+```
+
+--
+
+.overlay[.overlay-content[
+
+# There's More to Say
+
+Like before, this setup is not the end of the story. Find Microsoft's full instructions here:
+
+https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?tabs=aspnetcore2x
+
+]]
+
+---
+
 ## Sources
 
 * This presentation:
 
-  * https://oliversturm.github.io/cqrs-event-sourcing
-  * PDF download: https://oliversturm.github.io/cqrs-event-sourcing/slides.pdf
-
-* Demo code:
-
-  * https://github.com/oliversturm/cqrs-grid-demo (check _event-sourcing_ branch)
-
-* Talk to Seneca
-
-  * https://github.com/oliversturm/talk-to-seneca
+  * https://oliversturm.github.io/linux-101-for-dotnet-devs
+  * PDF download: https://oliversturm.github.io/linux-101-for-dotnet-devs/slides.pdf
 
 ---
 
