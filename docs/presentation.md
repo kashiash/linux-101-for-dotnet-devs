@@ -204,6 +204,12 @@ linux:~$
 
 ---
 
+class: impact
+
+# Let's Check It Out!
+
+---
+
 ## The Docs
 
 Documentation at your fingertips, since 1971.
@@ -290,6 +296,8 @@ linux:~$ ls -l /usr/bin | wc -l
 * Mount: `mount`
 * Space allocation: `df`, `du`
 * Find files and more: `find`
+
+* File names are _case-sensitive_!
 
 ]
 
@@ -473,6 +481,9 @@ dotnet run
 
 ## Deployment Considerations
 
+* Physical deployment
+  * `dotnet publish`
+  * Copy to `/usr/local/APPNAME` &mdash; recommended location!
 * Running the app in Kestrel is easy and fast
   * The standard template call `CreateDefaultBuilder` uses Kestrel
 * However, Microsoft recommends against running Kestrel as a public front-end server
