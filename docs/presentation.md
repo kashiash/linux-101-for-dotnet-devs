@@ -214,8 +214,8 @@ class: impact
 
 Documentation at your fingertips, since 1971.
 
-```shell
-man man
+```text
+$ man man
 ```
 
 ---
@@ -243,9 +243,9 @@ man man
   * On my system:
 
 ```text
-linux:~$ ls -l /bin | wc -l
+$ ls -l /bin | wc -l
 167
-linux:~$ ls -l /usr/bin | wc -l
+$ ls -l /usr/bin | wc -l
 3432
 ```
 
@@ -305,8 +305,8 @@ linux:~$ ls -l /usr/bin | wc -l
 
 ## Permissions
 
-```shell
-linux:~$ ls -l /bin/ls
+```text
+$ ls -l /bin/ls
 ```
 
 .svg-width[
@@ -417,15 +417,15 @@ From https://www.microsoft.com/net/learn/get-started/linuxubuntu -
 * Get Microsoft's package signature key (two lines):
 
 ```text
-curl https://packages.microsoft.com/keys/microsoft.asc |
+$ curl https://packages.microsoft.com/keys/microsoft.asc |
        gpg --dearmor > microsoft.gpg
-sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+$ sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
 ```
 
 * Register Microsoft's .NET Core apt package source (one line):
 
 ```text
-sudo sh -c 'echo "deb [arch=amd64]
+$ sudo sh -c 'echo "deb [arch=amd64]
   https://packages.microsoft.com/repos/microsoft-ubuntu-artful-prod
   artful main" > /etc/apt/sources.list.d/dotnetdev.list'
 ```
@@ -437,9 +437,9 @@ sudo sh -c 'echo "deb [arch=amd64]
 This is what Microsoft shows on the web page:
 
 ```text
-*sudo apt-get install apt-transport-https
-sudo apt-get update
-sudo apt-get install dotnet-sdk-2.1.4
+*$ sudo apt-get install apt-transport-https
+$ sudo apt-get update
+$ sudo apt-get install dotnet-sdk-2.1.4
 ```
 
 The highlighted line may be required in certain "limited functionality" environments, but not on normally installed workplace machines.
@@ -454,7 +454,7 @@ From https://code.visualstudio.com/docs/setup/linux :
 * Register the VS Code apt package source (one line):
 
 ```text
-sudo sh -c 'echo "deb [arch=amd64]
+$ sudo sh -c 'echo "deb [arch=amd64]
   https://packages.microsoft.com/repos/vscode stable main" >
   /etc/apt/sources.list.d/vscode.list'
 ```
@@ -462,8 +462,8 @@ sudo sh -c 'echo "deb [arch=amd64]
 * And install:
 
 ```text
-sudo apt update
-sudo apt install code
+$ sudo apt update
+$ sudo apt install code
 ```
 
 ---
@@ -473,10 +473,10 @@ sudo apt install code
 Simples!
 
 ```text
-mkdir demoapp
-cd demoapp
-dotnet new mvc
-dotnet run
+$ mkdir demoapp
+$ cd demoapp
+$ dotnet new mvc
+$ dotnet run
 ```
 
 ---
@@ -500,16 +500,16 @@ dotnet run
 ## Setting Up nginx
 
 ```text
-sudo apt install nginx
-cd /etc/nginx
-sudo vi sites-available/demoapp
-sudo ln -s sites-available/demoapp sites-enabled/
-sudo nginx -s reload
+$ sudo apt install nginx
+$ cd /etc/nginx
+$ sudo vi sites-available/demoapp
+$ sudo ln -s sites-available/demoapp sites-enabled/
+$ sudo nginx -s reload
 ```
 
 demoapp config:
 
-```text
+```nginx
 server {
   listen 80;
   location / {
@@ -527,7 +527,7 @@ server {
 In the nginx default setup, there may be a server configuration listening on port 80 already. If so, you can deactivate it by removing the symbolic link:
 
 ```text
-sudo rm /etc/nginx/sites-enabled/default
+$ sudo rm /etc/nginx/sites-enabled/default
 ```
 
 ]]
@@ -549,9 +549,9 @@ https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?tabs=as
 ## Auto-Starting Kestrel
 
 ```text
-sudo vi /etc/systemd/system/demoapp.service
-sudo systemctl enable demoapp
-sudo systemctl start demoapp
+$ sudo vi /etc/systemd/system/demoapp.service
+$ sudo systemctl enable demoapp
+$ sudo systemctl start demoapp
 ```
 
 ---

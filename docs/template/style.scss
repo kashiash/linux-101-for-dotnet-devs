@@ -171,7 +171,7 @@ code {
 pre {
   border-radius: 15px;
   display: block;
-  padding: 0.5em;
+  padding: 0;
 }
 
 // So I can use
@@ -180,7 +180,7 @@ pre {
 // indentation etc.
 code.text {
   display: block;
-  padding: 0 !important;
+  padding: 10px !important;
 }
 
 code.linuxprompt {
