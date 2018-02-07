@@ -318,6 +318,7 @@ linux:~$ ls -l /bin/ls
 ## Manipulating Permissions
 
 * `chown` changes owning user, `chgrp` changes owning group
+  * These two usually require `sudo`, to prevent users from "giving away" their files
 * `chmod` changes permissions
   * `chmod u+x` adds `x` for owning user
   * `chmod +w` adds `w` everywhere
@@ -337,6 +338,7 @@ linux:~$ ls -l /bin/ls
 * `sudo` executes commands with root permissions
   * `sudo -s` gives you a root shell, but use with great caution!
   * The only known command to insult you if you want it to... google it! :)
+* `su otheruser` makes you _otheruser_, `su - otheruser` uses login shell
 
 ---
 
@@ -471,8 +473,8 @@ sudo apt install code
 Simples!
 
 ```text
-mkdir olisapp
-cd olisapp
+mkdir demoapp
+cd demoapp
 dotnet new mvc
 dotnet run
 ```
