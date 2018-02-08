@@ -381,15 +381,14 @@ $ ls -l /bin/ls
 
 * Package Management system depends on your distribution
   * `dpkg`, `apt`, `aptitude` on Debian/Ubuntu systems
-  * `rpm` on Red Hat and derived systems
-  * `yum`, `dnf`, `pacman`, `emerge`, `zypper` ...
+  * `rpm`, `yum`, `dnf`, `pacman`, `emerge`, `zypper` ...
 * For Ubuntu:
   * `sudo apt update` loads newest package lists
   * `sudo apt upgrade` installs available upgrades
   * `sudo apt install` and `sudo apt remove` &mdash; guess what :)
   * `do-release-upgrade` for automated upgrade to new major release versions
   * Config files in `/etc/apt`
-* New: "snaps" are universal packages &mdash; https://www.ubuntu.com/desktop/snappy
+* New: universal packages with Snap, Flatpak and AppImage
 
 ---
 
