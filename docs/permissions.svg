@@ -14,10 +14,46 @@
    viewBox="0 0 173.82254 83.504859"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="permissions.svg">
   <defs
      id="defs2">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1038"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1034"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1030"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1026"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1022"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1018"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1014"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1010"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1006"
+       is_visible="true" />
     <inkscape:path-effect
        effect="spiro"
        id="path-effect1081"
@@ -36,10 +72,10 @@
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="3832"
-     inkscape:window-height="2094"
+     inkscape:window-width="3830"
+     inkscape:window-height="2113"
      inkscape:window-x="3840"
-     inkscape:window-y="30"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -53,7 +89,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -289,5 +325,62 @@
          id="tspan1059"
          x="-51.158665"
          y="223.45955">  omitted </tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -187.43383,155.07961 1.87088,3.74178"
+       id="path1004"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect1006"
+       inkscape:original-d="m -187.43383,155.07961 c 0.62389,1.247 1.24752,2.49426 1.87088,3.74178" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -154.29241,155.54734 -1.73726,3.74177"
+       id="path1008"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect1010"
+       inkscape:original-d="m -154.29241,155.54734 c -0.57882,1.22472 -1.15791,2.49425 -1.73726,3.74177" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#00ff00;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -148.81339,155.81461 -0.80181,12.09394"
+       id="path1012"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect1014"
+       inkscape:original-d="m -148.81339,155.81461 c -0.267,4.03105 -0.53427,8.06236 -0.80181,12.09394" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#00ffff;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -137.92215,155.41371 c 0.0109,0.47956 -0.0808,0.96119 -0.26729,1.40316 -0.43228,1.02476 -1.32557,1.76608 -2.06225,2.59933 -0.36834,0.41662 -0.70572,0.86936 -0.92035,1.38237 -0.21464,0.51302 -0.2998,1.09329 -0.15781,1.63096 0.12599,0.47711 0.42432,0.89712 0.79366,1.22438 0.36933,0.32725 0.80789,0.56762 1.25971,0.76602 0.90364,0.39681 1.88742,0.6434 2.69066,1.21683 0.66087,0.47178 1.16373,1.14648 1.48991,1.89008 0.32618,0.74359 0.48128,1.5547 0.52154,2.36569 0.0805,1.62198 -0.2876,3.22738 -0.54146,4.83139 -0.0773,0.48849 -0.14415,0.97864 -0.20046,1.46999"
+       id="path1020"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect1022"
+       inkscape:original-d="m -137.92215,155.41371 c 0.0225,0.42291 -0.28929,0.97971 -0.26729,1.40316 0.022,0.42344 -2.09334,3.7415 -3.14041,5.61266 -1.04707,1.87115 3.16295,2.13789 4.74403,3.20723 1.58108,1.06934 0.98025,6.05785 1.46999,9.08716 0.48972,3.02932 -0.13338,0.97973 -0.20046,1.46999"
+       sodipodi:nodetypes="cccscc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ffff00;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -120.34919,155.54734 -0.13363,3.67495"
+       id="path1024"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect1026"
+       inkscape:original-d="m -120.34919,155.54734 c -0.0443,1.22472 -0.0888,2.4497 -0.13363,3.67495" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff00ff;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -99.502162,155.54734 -0.06682,11.75986"
+       id="path1028"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect1030"
+       inkscape:original-d="m -99.502162,155.54734 c -0.02201,3.91968 -0.04428,7.83964 -0.06682,11.75986" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff6600;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -85.938235,156.75005 39.622709,-0.0668"
+       id="path1032"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect1034"
+       inkscape:original-d="m -85.938235,156.75005 c 13.207834,-0.0225 26.415405,-0.0448 39.622709,-0.0668" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff6600;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -67.16255,157.61867 -0.467722,17.3057"
+       id="path1036"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect1038"
+       inkscape:original-d="m -67.16255,157.61867 c -0.155643,5.76831 -0.311549,11.53688 -0.467722,17.3057" />
   </g>
 </svg>
