@@ -35,10 +35,6 @@ $iframe-scale: 1.5;
   }
   img#devexpress {
     opacity: 0.7;
-    margin-right: 60px;
-  }
-  img#mvp {
-    opacity: 0.4;
   }
 }
 
@@ -262,8 +258,8 @@ li {
 
 .full {
   &iframe {
-    height: calc(#{100%/$iframe-scale} - 1.2em);
-    width: 100%/$iframe-scale;
+    height: calc(#{100% / $iframe-scale} - 1.2em);
+    width: 100% / $iframe-scale;
     transform: scale($iframe-scale);
     transform-origin: 0 0;
     border: 0;
